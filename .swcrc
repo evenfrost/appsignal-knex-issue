@@ -1,0 +1,17 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "decorators": true
+    },
+    "transform": {
+      "decoratorMetadata": true
+    },
+    "target": "es2019",
+    "baseUrl": "."
+  },
+  "module": {
+    "type": "commonjs",
+    "lazy": true
+  }
+}

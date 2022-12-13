@@ -1,0 +1,32 @@
+{
+  "name": "appsignal-knex-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "npm run build && node --require './build/appsignal.cjs' ./build/index.js",
+    "build": "npx swc src --out-dir ./build --copy-files"
+  },
+  "dependencies": {
+    "@appsignal/nodejs": "^3.0.1",
+    "@mikro-orm/core": "^4.5.10",
+    "@mikro-orm/migrations": "^4.5.10",
+    "@mikro-orm/postgresql": "^4.5.10",
+    "@swc-node/register": "^1.5.4",
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.3.22",
+    "@swc/helpers": "^0.4.14",
+    "@types/lodash": "^4.14.191",
+    "@types/pluralize": "^0.0.29",
+    "@types/uuid": "^9.0.0",
+    "lodash": "^4.17.21",
+    "pg": "^8.8.0",
+    "pluralize": "^8.0.0",
+    "reflect-metadata": "^0.1.13",
+    "typescript": "^4.9.4",
+    "uuid": "^9.0.0"
+  }
+}
